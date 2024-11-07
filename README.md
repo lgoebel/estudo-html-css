@@ -2,7 +2,7 @@
 
 A website focused to study how a basic site can works
 ---
-- mobily friendly
+- mobile friendly
 
 technologies used
 ---
