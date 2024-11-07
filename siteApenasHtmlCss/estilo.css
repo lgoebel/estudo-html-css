@@ -1,9 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    margin: auto;
     padding: 0;
+    margin-top: 0;
+    margin-left: 0;
 }
 
+/*Modificações feitas apenas no header */
 #header {
     background-color: #4CAF50;
     color: white;
@@ -12,56 +14,92 @@ body {
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 1000;
+    left: 0; 
     padding-bottom: 0;
+    padding-left: 0;
+    z-index: 1000;
+    height: 80px;
 }
 
-#nav ul.topnav {
+/*Quando está maior que 900px */
+/*Modificações feitas dentro de <ul> */
+
+#nav ul.opcoes {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    width: auto;
+    position: fixed;
+    overflow: auto;
+    height: 100%;
     background-color: #333;
+    text-align: left;
 }
 
-#nav ul.topnav li {
-    float: left;
-}
+/*Modificações feitas dentro de <ul><li><a> */
 
-#nav ul.topnav li a {
+#nav ul.opcoes li a {
     display: block;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 8px 16px;
     text-decoration: none;
 }
 
-#nav ul.topnav li a:hover:not(.active) {
-    background-color: #111;
-}
+/*Modificações feitas quando é ativado <li><a> */
 
-ul.topnav li a.active {
+ul.opcoes li a.active {
     background-color: #04AA6D;
 }
 
-ul.topnav .right {
-    float: right;
+/*Modificações feitas quando <li><a> está em hover mas não está ativo*/
+
+#nav ul.opcoes li a:hover:not(.active) {
+    background-color: #111;
 }
 
+/*Modificações feitas dentro do div.content */
+div.content {
+    margin-top: 0px;
+    padding-top: 85px;
+    height: 1000px;
+    margin-left: 100px;
+}
 
-@media screen and (max-width: 600px) {
-    ul.topnav li.right,
-    ul.topnav li {
-        float: none;
-        width:100%;
-        text-align: center;
+/* Quando está entre 500px e 900px */
+@media screen and (max-width: 900px) {
+    #nav ul.opcoes {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    /*Modificações feitas dentro <ul><li><a> quando está entre 500px e 900px */
+    #nav ul.opcoes li a {
+        float: left;
+        padding: 15px;
+    }
+    /*Modificações feitas dentro do div.content quando está entre 500px e 900px */
+    div.content {
+        margin-left: 0;
+        margin-top: 45px;
+        margin-left: 10px;
+
     }
 }
+/* Quando está abaixo de 500px */
+@media screen and (max-width: 500px) {
+    /*Modificações feitas dentro <ul><li><a> quando está abaixo de 500px e 900px */
+    #nav ul.opcoes li a {
+        text-align: center;
+        float: none;
+    }
+    div.content {
+        margin-left: 0;
+        margin-top: 190px;
+        margin-left: 10px;
+    }
 
-#content {
-    padding-top: 100px; /* Espaço para evitar que o conteúdo fique atrás do cabeçalho fixo */
-    text-align: center;
 }
+
 #footer {
     background-color: #333;
     color: white;
