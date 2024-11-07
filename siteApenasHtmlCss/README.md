@@ -1,4 +1,11 @@
 # README.md
 
-Este README tem o intuito de mostrar como está sendo a evolução desse site que estou criando. A primeira parte está sendo apenas a parte superior dentro do #header
-![image](https://github.com/user-attachments/assets/83af291b-f7dc-4f52-8ee8-c8fc6bfa8e56)
+Inicialmente apenas colocando o #header fixo e responsivo.
+
+Screentshot modo desktop
+---
+![image](https://github.com/user-attachments/assets/42ebf116-23f4-4cfd-844b-ecc857c05801)
+
+Screentshot modo mobile
+---
+![image](https://github.com/user-attachments/assets/696dacd8-90dc-4170-a7e0-3edebf827385)
