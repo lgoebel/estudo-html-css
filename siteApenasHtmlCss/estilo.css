@@ -38,7 +38,7 @@ body {
 
 /*Modificações feitas dentro de <ul><li><a> */
 
-#nav ul.opcoes li a {
+#nav ul.opcoes li a, .dropbtn {
     display: block;
     color: white;
     padding: 8px 16px;
@@ -46,6 +46,7 @@ body {
 }
 
 /*Modificações feitas quando é ativado <li><a> */
+
 
 ul.opcoes li a.active {
     background-color: #04AA6D;
@@ -55,6 +56,29 @@ ul.opcoes li a.active {
 
 #nav ul.opcoes li a:hover:not(.active) {
     background-color: #111;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {background-color: #000000;}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /*Modificações feitas dentro do div.content */
@@ -84,6 +108,15 @@ div.content {
         margin-left: 10px;
 
     }
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: #000000;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
 }
 /* Quando está abaixo de 500px */
 @media screen and (max-width: 500px) {
@@ -96,6 +129,14 @@ div.content {
         margin-left: 0;
         margin-top: 190px;
         margin-left: 10px;
+    }
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: #000000;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
     }
 
 }
