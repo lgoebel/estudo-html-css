@@ -83,6 +83,34 @@ li.dropdown {
     margin-left: 10px;
 }
 
+@media screen and (max-width: 600px){
+    ul li {
+        float: none;
+        text-align: center;
+    }
+    li a{
+        display: block;
+    }
+    li.dropdown {
+        display: block;
+        position: relative;
+    }
+    .dropdown-content {
+        position: inherit;
+    }
+    .dropdown-content a {
+        color: rgb(255, 255, 255);
+        padding: 12px 16px;
+        display: block;
+        text-align: center;
+    }
+    .content {
+        margin-top: 145px;
+        padding-top: 85px;
+        margin-left: 10px;
+    }
+}
+
 #footer {
     background-color: #333;
     color: white;
