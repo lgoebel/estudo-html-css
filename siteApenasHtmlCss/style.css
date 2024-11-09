@@ -68,7 +68,10 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+.contentp02 {
+    padding-top: 85px;
+    margin: 50px 10px 60px 10px;
+}
 .content {
     margin-top: 50px;
     padding-top: 85px;
@@ -122,6 +125,10 @@ div.desc {
         padding: 12px 16px;
         display: block;
         text-align: center;
+    }
+    .contentp02 {
+        padding-top: 85px;
+        margin: 145px 10px 60px 10px;
     }
     .content {
         padding-top: 85px;
