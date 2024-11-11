@@ -1,14 +1,11 @@
-# basic website HTML/CSS only
+# ESTUDO HTML e CSS
 
-A website focused to study how a basic site can works
+Trabalhos finalizados:
 ---
-- mobile friendly
+- Site responsivo para desktop e mobile
 
-technologies used
+technologies alredy used
 ---
-
-- HTML
-- CSS
-
-Screenshots
----
+- Navigation Bar
+- Dropdowns
+- Image Gallery
