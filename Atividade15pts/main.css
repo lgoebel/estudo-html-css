@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -10,125 +9,97 @@ body {
     line-height: 1.6;
     background-color: #f8f9fa;
     color: #212529;
-
 }
 
-nav {
+.header {
     background-color: #f8f9fa;
     padding: 10px 0;
-    border: 1px solid green; /* Borda verde no nav */
+    border: 1px solid black;
 }
 
-nav .container-fluid {
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    border: 1px solid purple; /* Borda roxa na container */
 }
 
-nav h4 a {
-    text-decoration: none;
+.brand img {
     color: inherit;
-    border: 1px solid orange; /* Borda laranja no link */
-}
-
-nav h4 img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 200px;
     height: auto;
-    border: 1px solid pink; /* Borda rosa na imagem */
+    border: 1px solid black;
 }
 
-nav h5 {
+.tagline {
     color: #6c757d;
-    border: 1px solid yellow; /* Borda amarela no h5 */
 }
 
-nav .navbar-nav {
+.menu-list {
     list-style: none;
     display: flex;
     gap: 15px;
-    border: 1px solid brown; /* Borda marrom na lista de navegação */
+    border: 1px solid black;
+    align-items: center;
 }
 
-nav .nav-item {
-    display: inline-block;
-    border: 1px solid black; /* Borda preta nos itens de navegação */
-}
-
-nav .nav-link {
+.menu-list .menu-link {
     text-decoration: none;
     color: #212529;
     padding: 5px 10px;
     transition: color 0.3s;
-    border: 1px solid grey; /* Borda cinza nas links */
 }
 
-nav .nav-link:hover {
+.menu-list .menu-link:hover {
     color: #007bff;
 }
 
-nav .navbar-toggler {
+.menu-toggle {
     background-color: transparent;
-    border: 1px solid red; /* Borda vermelha no botão de alternância */
 }
 
-.navbar-toggler-icon {
+.toggle-icon {
     background-color: #000;
-    border: 1px solid blue; /* Borda azul no ícone do toggler */
 }
 
-.container {
+.main-content {
     margin-top: 20px;
     padding: 0 20px;
-    border: 1px solid green; /* Borda verde no container */
 }
 
-.row {
+.intro {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    border: 1px solid violet; /* Borda violeta nas linhas */
 }
 
-.col-md-6,
-.col-lg-7,
-.col-6,
-.col-lg-5 {
+.screenshot-column {
     flex: 1;
-    border: 1px solid orange; /* Borda laranja nas colunas */
 }
 
 .text-center {
     text-align: center;
-    border: 1px solid purple; /* Borda roxa no texto centralizado */
 }
 
-.text-md-start {
-    text-align: left;
-    border: 1px solid teal; /* Borda verde-azulada no texto à esquerda */
-}
-
-.lead {
+.description {
     font-size: 1.25rem;
     color: #555;
-    border: 1px solid pink; /* Borda rosa no lead */
 }
 
-.lead a {
+.description a {
     color: #007bff;
     text-decoration: none;
-    border: 1px solid yellow; /* Borda amarela no link dentro do lead */
 }
 
-.lead a:hover {
+.description a:hover {
     text-decoration: underline;
 }
 
 h1 img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px; /* ou o valor desejado */
     height: auto;
-    border: 1px solid blue; /* Borda azul nas imagens do h1 */
 }
 
 .btn {
@@ -140,16 +111,15 @@ h1 img {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid red; /* Borda vermelha nos botões */
 }
 
-.btn-primary {
+.primary-btn {
     background-color: #007bff;
     color: white;
     border-color: #007bff;
 }
 
-.btn-outline-secondary {
+.secondary-btn {
     background-color: transparent;
     color: #6c757d;
     border-color: #6c757d;
@@ -161,114 +131,96 @@ h1 img {
 
 .mb-3 {
     margin-bottom: 1rem;
-    border: 1px solid black; /* Borda preta no margin-bottom */
 }
 
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid purple; /* Borda roxa no mx-auto */
 }
 
 .d-none {
     display: none;
-    border: 1px solid green; /* Borda verde quando elemento está oculto */
 }
 
 .d-md-block {
     display: block;
-    border: 1px solid orange; /* Borda laranja no display block */
 }
 
 img {
-    max-width: 100%; 
-    height: auto; 
-    border: 1px solid yellow; /* Borda amarela nas imagens */
+    width: 100%;
+    max-width: 400px; /* ou o valor desejado */
+    height: auto;
 }
 
 .w-100 {
     width: 100%; 
     height: auto; 
-    border: 1px solid black; /* Borda preta na largura 100% */
 }
 
 .shadow-1-strong {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    border: 1px solid grey; /* Borda cinza na sombra */
 }
 
 .rounded {
     border-radius: 5px;
-    border: 1px solid brown; /* Borda marrom nos elementos arredondados */
 }
 
-.masthead-followup {
+.updates {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 40px;
-    border: 1px solid red; /* Borda vermelha no masthead-followup */
 }
 
-.masthead-followup .col-md-4 {
+.update-box {
     flex: 1;
     background-color: #f8f9fa;
     padding: 20px;
-    border: 1px solid purple; /* Borda roxa nas colunas do masthead-followup */
 }
 
-.masthead-followup h3 {
+.update-box h3 {
     font-size: 1.5rem;
     color: #007bff;
-    border: 1px solid blue; /* Borda azul no h3 */
 }
 
-.masthead-followup ul {
+.update-box ul {
     list-style: none;
     padding-left: 0;
-    border: 1px solid green; /* Borda verde nas listas */
 }
 
-.masthead-followup ul li {
+.update-box ul li {
     margin-bottom: 10px;
-    border: 1px solid yellow; /* Borda amarela nos itens da lista */
 }
 
-.masthead-followup ul li a {
+.update-box ul li a {
     color: #007bff;
     text-decoration: none;
-    border: 1px solid red; /* Borda vermelha nos links da lista */
 }
 
-.masthead-followup ul li a:hover {
+.update-box ul li a:hover {
     text-decoration: underline;
 }
 
-.masthead-followup .text-muted {
+.update-box .date {
     color: #6c757d;
-    border: 1px solid brown; /* Borda marrom no texto mutado */
 }
 
 @media (max-width: 767px) {
-    .masthead-followup {
+    .updates {
         flex-direction: column;
-        border: 1px solid blue; /* Borda azul em masthead-followup no mobile */
     }
     
-    nav .container-fluid {
+    .container {
         flex-direction: column;
         align-items: flex-start;
-        border: 1px solid green; /* Borda verde na navegação em dispositivos móveis */
     }
 
-    .navbar-nav {
+    .menu-list {
         flex-direction: column;
         width: 100%;
-        border: 1px solid orange; /* Borda laranja na navbar-nav */
     }
 
-    .navbar-toggler {
+    .menu-toggle {
         margin-top: 10px;
-        border: 1px solid pink; /* Borda rosa no navbar-toggler */
     }
 }
