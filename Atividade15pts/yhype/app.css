@@ -16,6 +16,85 @@ html {
   -o-tab-size:4;
   tab-size:4
 }
+/* Container principal */
+.content {
+  text-align: center;
+}
+
+/* Título */
+.title {
+  font-size: 2.5rem; /* Para o tamanho normal */
+  font-weight: 800; /* Extra negrito */
+  color: #111;
+}
+
+.title .highlight {
+  color: #e02424; /* Cor vermelha */
+}
+
+/* Descrição */
+.description {
+  margin-top: 1rem;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.125rem;
+  color: #6b7280;
+}
+
+/* Container do botão */
+.button-container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Botão */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  color: #1f2937;
+  background-color: #fff;
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn:hover {
+  background-color: #f9fafb;
+  border-color: #e02424;
+}
+
+/* Ícone */
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Texto do botão */
+.btn-text {
+  margin-left: 0.5rem;
+}
+
+/* SVG de carregamento */
+.loading svg {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Mostrar e esconder elementos */
+.show {
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+
 body {
   line-height:inherit;
   margin:0
