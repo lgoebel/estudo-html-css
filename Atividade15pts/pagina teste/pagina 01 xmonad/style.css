@@ -1,7 +1,7 @@
 /* Estilos Gerais */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #ffffff; 
     font-size: 20px;
     line-height: 1.5;
     margin: 0;
@@ -10,7 +10,7 @@ body {
 
 /* Cabeçalho */
 .container-brand {
-    background-color: #f8f9fa;
+    background-color: #004d99; 
     display: flex;   
     margin: 20px auto;
     justify-content: space-between;
@@ -26,7 +26,7 @@ body {
 }
 .logo {
     font-size: 16px;
-    color: #6c757d;
+    color: #ffcc00; 
     text-align: left;
     margin-top: 0;
 }
@@ -37,11 +37,11 @@ body {
     padding-right: 20px;
 }
 .menu-link:hover {
-    color: #dd4d5d;
+    color: #ffcc00; 
 }
 .menu-link {
     text-decoration: none;
-    color: #212529;
+    color: #ffffff; 
     padding: 5px 10px;
     font-size: 16px;
     transition: color 0.3s;
@@ -70,18 +70,19 @@ body {
     margin-top: 100px; 
 }
 .description {
-    color: #555;
+    color: #333; 
 }
 .action-buttons {
     display: flex;
     gap: 10px; 
 }
 .description a {
-    color: #dd4d5d;
+    color: #004d99; 
     text-decoration: none;
 }
 .description a:hover {
     text-decoration: underline;
+    color: #ffcc00; 
 }
 h1 img {
     width: 500px;
@@ -101,7 +102,7 @@ h1 img {
     margin: 10px;
 }
 #see-more {
-    color: #dd4d5d;
+    color: #004d99; 
 }
 
 /* Botões */
@@ -117,23 +118,23 @@ h1 img {
     cursor: pointer;
 }
 .primary-btn {
-    background-color: #dd4d5d;
-    color: white;
+    background-color: #004d99; 
+    color: #ffffff; 
     margin: 15px;
 }
 .secondary-btn {
     background-color: transparent;
-    color: #6c757d;
-    border-color: #6c757d;
+    color: #333; 
+    border-color: #333; 
     margin: 15px;
 }
 .primary-btn:hover {
-    background-color: #000000;
-    color: white;
+    background-color: #ffcc00; 
+    color: #004d99; 
 }
 .secondary-btn:hover {
-    background-color: #b1b1b1;
-    color: white;
+    background-color: #333; 
+    color: #ffffff;
 }
 
 /* Seções de Atualizações e Parcerias */
@@ -145,13 +146,14 @@ h1 img {
 }
 .update-box {
     flex: 1;
-    background-color: #f1f1f1;
+    background-color: #ffffff; 
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #004d99; 
 }
 .update-box h3 {
     font-size: 1.5rem;
-    color: #dd4d5d;
+    color: #004d99; 
     margin-bottom: 10px;
 }
 .update-box ul {
@@ -162,15 +164,16 @@ h1 img {
     margin-bottom: 10px;
 }
 .update-box ul li a {
-    color: #dd4d5d;
+    color: #004d99; 
     text-decoration: none;
 }
 .update-box ul li a:hover {
     text-decoration: underline;
+    color: #ffcc00; 
 }
 .date {
     font-size: 0.875rem;
-    color: #6c757d;
+    color: #333; 
 }
 
 /* Rodapé */

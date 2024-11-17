@@ -1,15 +1,17 @@
 /* Reset e Estilos Gerais */
 body {
     margin: 0;
+    background-color: #ffffff; 
 }
 
 .container {
-    background-color: #f9fafb;
+    background-color: #00ffff; 
 }
 
 /* Cabeçalho */
 .header {
     padding: 1rem 0 1.5rem 0;
+    background-color: #004d99; 
 }
 .navbar {
     max-width: 1200px;
@@ -22,14 +24,17 @@ body {
 .logo-link {
     font-size: 2rem;
     font-weight: bold;
-    color: #1f2937;
+    color: #000000; 
     text-decoration: none;
 }
 .logo-link:hover {
-    color: #e02424;
+    color: #ffcc00; 
 }
 .highlight {
-    color: #e02424;
+    color: #004d99; 
+}
+.logo-text{
+    color: #00ffff;
 }
 .hidden {
     opacity: 0;
@@ -39,15 +44,15 @@ body {
 .logo-link:hover .hidden {
     opacity: 1;
     visibility: visible; 
-    color: #e02424;
+    color: #ffcc00; 
 }
 
 /* Botões */
 .content-button, .nav-button {
     padding: 0.75rem 1.5rem;
-    background-color: #ffffff;
+    background-color: #ffffff; 
     border: 1px solid transparent;
-    color: #1f2937;
+    color: #000000; 
     font-size: 1rem;
     font-weight: 500;
     border-radius: 0.375rem;
@@ -57,9 +62,9 @@ body {
 
 .content-button:hover, .nav-button:hover {
     outline: none;
-    background-color: #f9fafb;
-    border-color: #e02424;
-    box-shadow: 0 0 0 3px rgba(252, 165, 165, 0.5);
+    background-color: #ffcc00; 
+    border-color: #004d99; 
+    box-shadow: 0 0 0 3px #004d99
 }
 
 /* Ícones */
@@ -73,18 +78,21 @@ body {
     width: 80px;
     height: 80px;
     margin: 0 1rem;
+    background-color: #ffcc00; 
+    border-radius: 50%;
 }
 
 /* Texto Principal */
 .main-content {
     padding: 3rem 0 4rem 0;
     text-align: center;
+    background-color: #ffffff; 
 }
 
 .title {
     font-size: 2.5rem;
     font-weight: 800;
-    color: #111;
+    color: #000000; 
 }
 
 .description {
@@ -98,6 +106,7 @@ body {
 .bottom-content {
     position: relative;
     padding-bottom: 3rem;
+    background-color: #ffcc00; 
 }
 
 .background {
@@ -112,7 +121,7 @@ body {
 }
 
 .dark-bg {
-    background-color: #2d3748; 
+    background-color: #000000; 
 }
 
 .img-content {

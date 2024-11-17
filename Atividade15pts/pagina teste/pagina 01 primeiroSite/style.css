@@ -4,11 +4,13 @@ body {
   padding: 0;
   margin: 0;
   line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
 }
 
 header#header {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #004d99;
+  color: #ffffff;
   padding: 10px 20px;
   text-align: center;
   position: fixed;
@@ -39,20 +41,20 @@ nav ul li {
 
 nav ul li a {
   display: inline-block;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 nav ul li a.active, nav ul li a:hover {
-  background-color: #04AA6D;
+  background-color: #ffcc00;
 }
 
 /* Hero Section */
 #hero {
   background: url('Imagens/hero.jpg') no-repeat center center/cover;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 150px 20px;
 }
@@ -69,8 +71,8 @@ nav ul li a.active, nav ul li a:hover {
 
 .cta-button {
   display: inline-block;
-  background-color: #04AA6D;
-  color: white;
+  background-color: #ffcc00;
+  color: #333;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -78,13 +80,14 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 .cta-button:hover {
-  background-color: #039a5d;
+  background-color: #e6b800;
 }
 
 /* Seções */
 .content {
   margin: 100px 20px;
   padding: 20px;
+  background-color: #ffffff;
 }
 
 #sobre, #produtos, #contribua, #contato {
@@ -94,12 +97,12 @@ nav ul li a.active, nav ul li a:hover {
 h3 {
   font-size: 1.8em;
   margin-bottom: 15px;
-  color: #333;
+  color: #004d99;
 }
 
 p {
   font-size: 1em;
-  color: #555;
+  color: #333;
 }
 
 /* Produtos */
@@ -109,7 +112,7 @@ article.gallery {
   float: left;
   width: 24%;
   text-align: center;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -132,7 +135,7 @@ article.gallery .desc {
 
 /* Formulário de Contato */
 form {
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -142,7 +145,7 @@ form label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
-  color: #333;
+  color: #004d99;
 }
 
 form input, form textarea {
@@ -155,8 +158,8 @@ form input, form textarea {
 }
 
 form button {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #ffcc00;
+  color: #333;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -165,49 +168,17 @@ form button {
 }
 
 form button:hover {
-  background-color: #039a5d;
+  background-color: #e6b800;
 }
 
 /* Rodapé */
 footer#footer {
-  background-color: #333;
-  color: white;
+  background-color: #004d99;
+  color: #ffffff;
   text-align: center;
   padding: 10px;
   position: fixed;
   bottom: 0;
   width: 100%;
   font-size: 0.9em;
-}
-
-/* Responsividade */
-@media only screen and (max-width: 768px) {
-  article.gallery {
-      width: 48%;
-  }
-
-  nav ul li {
-      float: none;
-      text-align: center;
-  }
-
-  .cta-button {
-      font-size: 1em;
-      padding: 8px 16px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  article.gallery {
-      width: 100%;
-  }
-
-  #hero {
-      padding: 100px 20px;
-  }
-
-  .cta-button {
-      font-size: 0.9em;
-      padding: 6px 12px;
-  }
 }
