@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#" class="logo-link">
+                    <span class="logo-text">Mangateca</span><span class="hidden">DiCria</span>
+                </a>
+            </div>
+            <ul class="menu-list">
+                <li><a href="#home" class="menu-link">Home</a></li>
+                <li><a href="#sobre" class="menu-link">Sobre</a></li>
+                <li><a href="#quadrinhos" class="menu-link">Quadrinhos</a></li>
+                <li><a href="#contato" class="menu-link">Contato</a></li>
+                <li><a href="#parcerias" class="menu-link">Parcerias</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="content">
+        <section id="hero">
+            <h2>Transformando vidas com quadrinhos!</h2>
+            <p>Todo valor arrecadado é revertido para comprar novos quadrinhos e melhorar o espaço da nossa biblioteca, que acolhe crianças da comunidade.</p>
+            <a href="https://instagram.com/seupagina" target="_blank" class="cta-button">Visite nosso Instagram</a>
+        </section>
+
+        <!-- Sobre -->
+        <section id="sobre">
+            <h3>Sobre a Biblioteca</h3>
+            <p>Somos uma biblioteca comunitária dedicada a trazer alegria, conhecimento e diversão para crianças e jovens por meio de quadrinhos. Sua ajuda faz a diferença!</p>
+        </section>
+
+        <!-- Produtos -->
+        <section id="produtos">
+            <h3>Nossos Quadrinhos</h3>
+            <div class="responsive">
+                <article class="gallery">
+                    <a href="#"><img src="Imagens/img_quadrinho1.jpg" alt="Quadrinho 1"></a>
+                    <div class="desc">Título do Quadrinho 1 - R$15,00</div>
+                </article>
+            </div>
+            <div class="responsive">
+                <article class="gallery">
+                    <a href="#"><img src="Imagens/img_quadrinho2.jpg" alt="Quadrinho 2"></a>
+                    <div class="desc">Título do Quadrinho 2 - R$20,00</div>
+                </article>
+            </div>
+            <!-- Mais itens podem ser adicionados -->
+            <div class="clearfix"></div>
+        </section>
+
+        <!-- Contribua -->
+        <section id="contribua">
+            <h3>Contribua</h3>
+            <p>Ajude-nos a continuar esse projeto incrível. Você pode doar quadrinhos, contribuir financeiramente ou oferecer seu tempo como voluntário!</p>
+            <a href="#contato" class="cta-button">Entre em contato para contribuir</a>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato">
+            <h3>Entre em Contato</h3>
+            <form action="process_form.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="footer">
+        <p>© 2024 Biblioteca Comunitária de Quadrinhos | Feito com amor pela comunidade</p>
+    </footer>
+</body>
+</html>
