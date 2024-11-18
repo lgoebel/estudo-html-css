@@ -98,7 +98,7 @@ body {
 }
 
 .content {
-  margin: 100px 20px;
+  margin: 100px 20px 0 0;
   padding: 20px;
   background-color: #ffffff;
 }
@@ -183,13 +183,32 @@ form button:hover {
 }
 
 
+.bottom-content{
+  position: relative;
+  padding-bottom: 3rem;
+  bottom: 0;
+
+}
+.background {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  background-color: #ffcc00; 
+}
+
+
 footer {
   background-color: #004d99;
-  color: #ffffff;
   text-align: center;
   padding: 10px;
   position: fixed;
   bottom: 0;
   width: 100%;
+  
+}
+footer p{
+  color: #ffffff;
   font-size: 0.9em;
 }

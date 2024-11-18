@@ -191,7 +191,33 @@ h1 img {
 }
 
 #parcerias{
-    margin-bottom: 120px;
+    margin-bottom: 20px;
+}
+.background {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-content{
+    position: relative;
+    padding-bottom: 3rem;
+    bottom: 0;
+    position: fixed;
+}
+.background {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+}
+.half {
+    flex: 1;
+    height: 0;
+}
+.dark-bg {
+    background-color: #ffcc00; 
 }
 
 /* Rodapé */
