@@ -139,6 +139,8 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     max-width: 100%; 
     display: block; 
+    height: 300px;
+    width: 400px;
 
 }
 
