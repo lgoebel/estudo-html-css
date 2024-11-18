@@ -77,11 +77,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
 }
 .intro-text {
     flex: 1; 
     margin-right: 30px;
-    margin-top: 100px; 
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+    max-width: 600px;
+    flex: left;
 }
 .description {
     color: #333; 
@@ -107,16 +112,25 @@ h1 img {
     max-width: 400px; 
     height: auto;
     margin-bottom: 10px;
+    
 }
 .screenshot-column img {
-    width: 100%;
+    width: 50%;
     max-width: 400px; 
-    height: auto;
+    height: 200;
     border-radius: 10px;
-    margin: 10px;
+}
+
+.screenshot-column{
+    margin-left: 500px;
+}
+h1 img {
+    width: 200px;
+    height: 200px;
 }
 #see-more {
-    color: #004d99; 
+    color: #004d99;
+    margin-left: 500px;
 }
 
 /* Botões */
@@ -185,14 +199,19 @@ h1 img {
     text-decoration: underline;
     color: #ffcc00; 
 }
+.update-box img{
+    height: 200px;
+    width: 200px;
+}
 .date {
     font-size: 0.875rem;
     color: #333; 
 }
 
-#parcerias{
-    margin-bottom: 20px;
+#quadrinhos{
+    margin-bottom: 30px;
 }
+
 .background {
     position: absolute;
     inset: 0;
@@ -206,18 +225,12 @@ h1 img {
     bottom: 0;
     position: fixed;
 }
-.background {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-}
 .half {
     flex: 1;
-    height: 0;
 }
 .dark-bg {
     background-color: #ffcc00; 
+
 }
 
 /* Rodapé */
@@ -227,8 +240,8 @@ footer {
     bottom: 0;
     width: 100%;
   }
-  footer p{
+footer p{
     color: white;
     font-size: 0.9em;
     text-align: center;
-  }
+}
