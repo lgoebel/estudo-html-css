@@ -1,6 +1,6 @@
 /* Estilos Gerais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Neue', 'Patrick Hand', sans-serif;
     background-color: #ffffff; 
     font-size: 20px;
     line-height: 1.5;
@@ -9,27 +9,44 @@ body {
 }
 
 /* Cabeçalho */
-.container-brand {
+.header {
+    padding: 1rem 0 1.5rem 0;
     background-color: #004d99; 
-    display: flex;   
-    margin: 20px auto;
+}
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
     justify-content: space-between;
-}
-.brand {
-    flex-direction: column;
+    padding: 0 1rem;
     align-items: center;
-    padding-left: 20px;
 }
-.brand img {
-    width: 200px;
-    height: auto;
+.logo-link {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000; 
+    text-decoration: none;
 }
-.logo {
-    font-size: 16px;
+.logo-link:hover {
     color: #ffcc00; 
-    text-align: left;
-    margin-top: 0;
 }
+.highlight {
+    color: #004d99; 
+}
+.logo-text{
+    color: #00ffff;
+}
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.logo-link:hover .hidden {
+    opacity: 1;
+    visibility: visible; 
+    color: #ffcc00; 
+}
+
 .menu-list {
     list-style: none;
     display: flex; 
