@@ -4,19 +4,22 @@ body {
     margin: 0;
     line-height: 1.6;
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 
+/*Cabeçalho*/
 .header {
     padding: 1rem 0 1.5rem 0;
     background-color: #004d99; 
 }
 .navbar {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 0 1rem;
     align-items: center;
+}
+.logo-text{
+    color: #00ffff;
 }
 .logo-link {
     font-size: 2rem;
@@ -26,12 +29,6 @@ body {
 }
 .logo-link:hover {
     color: #ffcc00; 
-}
-.highlight {
-    color: #004d99; 
-}
-.logo-text{
-    color: #00ffff;
 }
 .hidden {
     opacity: 0;
@@ -43,12 +40,10 @@ body {
     visibility: visible; 
     color: #ffcc00; 
 }
-
 .menu-list {
     list-style: none;
     display: flex; 
     align-items: center;
-    padding-right: 20px;
 }
 .menu-link:hover {
     color: #ffcc00; 
@@ -60,10 +55,7 @@ body {
     font-size: 16px;
     transition: color 0.3s;
 }
-.menu-list a img {
-    width: 32px;
-    height: 32px;
-}
+
 .content-button {
     padding: 0.75rem 1.5rem;
     background-color: #ffffff;
@@ -128,17 +120,20 @@ h1 img {
     max-width: 400px; 
     height: auto;
     margin-bottom: 10px;
+    padding: 20px;
+
     
 }
 .screenshot-column img {
     width: 50%;
     max-width: 400px; 
     height: 200;
-    border-radius: 10px;
+    border-radius: 30px;
+
 }
 
 .screenshot-column{
-    margin-left: 500px;
+    margin-left: auto;
 }
 h1 img {
     width: 200px;
@@ -146,7 +141,7 @@ h1 img {
 }
 #see-more {
     color: #004d99;
-    margin-left: 500px;
+    margin-left: auto;
 }
 
 /* Botões */
