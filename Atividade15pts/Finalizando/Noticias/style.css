@@ -64,7 +64,23 @@ body {
     width: 32px;
     height: 32px;
 }
+.content-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    color: #004d99;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+.content-button:hover {
+    outline: none;
+    background-color: #ffcc00;
+    box-shadow: 0 0 0 3px #ffe88e
+}
 /* Seção de Introdução */
 .container{
     width: 100%;
@@ -212,25 +228,21 @@ h1 img {
     margin-bottom: 30px;
 }
 
+.bottom-content{
+    position: relative;
+    padding-bottom: 3rem;
+}
 .background {
     position: absolute;
     inset: 0;
     display: flex;
     flex-direction: column;
 }
-
-.bottom-content{
-    position: relative;
-    padding-bottom: 3rem;
-    bottom: 0;
-    position: fixed;
-}
 .half {
     flex: 1;
 }
 .dark-bg {
     background-color: #ffcc00; 
-
 }
 
 /* Rodapé */
