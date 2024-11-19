@@ -6,17 +6,20 @@ body {
   background-color: #ffffff;
   color: #333;
 }
+
+/*cabeçalho*/
 .header {
   padding: 1rem 0 1.5rem 0;
   background-color: #004d99; 
 }
 .navbar {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
   align-items: center;
+}
+.logo-text{
+  color: #00ffff;
 }
 .logo-link {
   font-size: 2rem;
@@ -26,12 +29,6 @@ body {
 }
 .logo-link:hover {
   color: #ffcc00; 
-}
-.highlight {
-  color: #004d99; 
-}
-.logo-text{
-  color: #00ffff;
 }
 .hidden {
   opacity: 0;
@@ -43,12 +40,10 @@ body {
   visibility: visible; 
   color: #ffcc00; 
 }
-
 .menu-list {
   list-style: none;
   display: flex; 
   align-items: center;
-  padding-right: 20px;
 }
 .menu-link:hover {
   color: #ffcc00; 
@@ -59,10 +54,6 @@ body {
   padding: 5px 10px;
   font-size: 16px;
   transition: color 0.3s;
-}
-.menu-list a img {
-  width: 32px;
-  height: 32px;
 }
 .content-button {
   padding: 0.75rem 1.5rem;
@@ -75,62 +66,26 @@ body {
   transition: background-color 0.3s ease, border-color 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .content-button:hover {
   outline: none;
   background-color: #ffcc00;
   box-shadow: 0 0 0 3px #ffe88e
 }
+
 /*meio*/
-#hero {
-  background: url('Imagens/hero.jpg') no-repeat center center/cover;
-  color: #ffffff;
-  text-align: center;
-  padding: 50px 20px;
-}
-
-#hero h2 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  color: #000000;
-}
-
-#hero p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-.cta-button {
-  display: inline-block;
-  background-color: #ffcc00;
-  color: #004d99;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1.1em;
-}
-
-.cta-button:hover {
-  background-color: #e6b800;
-}
-
 .content {
   padding: 20px;
   background-color: #ffffff;
 }
-
-#sobre, #produtos, #contato {
-  margin: 40px 0;
+#meio {
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px 40px;
 }
 
-#doar{
-  margin-top: 0px;
-}
-
-h3 {
-  font-size: 1.8em;
-  margin-bottom: 15px;
-  color: #004d99;
+#meio p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
 p {
@@ -138,75 +93,84 @@ p {
   color: #333;
 }
 
-article.gallery {
-  border: 1px solid #ccc;
-  margin: 5px;
-  float: left;
-  width: 24%;
+/* barra de quadrinhos */
+.comics-bar {
+  max-width: 1500px;
+  margin: 20px auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  align-items: left;
+  padding: 10px;
+}
+.comics-list {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+}
+.comic-item {
+  margin-right: 10px;
   text-align: center;
-  background-color: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
 }
-
-article.gallery img {
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid #ccc;
-  border-radius: 5px 5px 0 0;
+.comic-item img {
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
 }
-
-article.gallery .desc {
-  padding: 10px;
+.comic-item p {
+  margin-top: 5px;
+  font-size: 12px; 
   color: #333;
+
+}
+.comic-item:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
-.clearfix {
-  clear: both;
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #004d99; 
 }
-
-form {
-  background-color: #ffffff;
-  padding: 20px;
+.btn {
+  display: inline-flex; 
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 1.6rem;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: #004d99;
-}
-
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1em;
-}
-
-form button {
-  background-color: #ffcc00;
-  color: #333;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
   cursor: pointer;
-  font-size: 1em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.primary-btn {
+  background-color: #004d99; 
+  color: #ffffff; 
+
 }
 
-form button:hover {
-  background-color: #e6b800;
+.primary-btn:hover {
+  background-color: #ffcc00; 
+  color: #004d99; 
 }
 
+#doar div {
+  text-align: center; /* Centraliza horizontalmente o conteúdo */
+
+}
+
+/*conteudo inferior*/
 .bottom-content{
   position: relative;
   padding-bottom: 3rem;
   bottom: 0;
-
 }
 .background {
   position: absolute;
@@ -215,9 +179,7 @@ form button:hover {
   flex-direction: column;
   height: 100px;
   background-color: #ffcc00;
-  top: 150px;
 }
-
 
 footer {
   background-color: #004d99;
@@ -226,7 +188,6 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  
 }
 footer p{
   color: #ffffff;

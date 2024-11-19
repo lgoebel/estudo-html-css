@@ -161,15 +161,15 @@ h1 img {
     color: #ffffff; 
     margin: 15px;
 }
+.primary-btn:hover {
+    background-color: #ffcc00; 
+    color: #004d99; 
+}
 .secondary-btn {
     background-color: transparent;
     color: #333; 
     border-color: #333; 
     margin: 15px;
-}
-.primary-btn:hover {
-    background-color: #ffcc00; 
-    color: #004d99; 
 }
 .secondary-btn:hover {
     background-color: #333; 
