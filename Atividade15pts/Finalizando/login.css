@@ -6,7 +6,7 @@ body {
     background-color: #ffffff;
     overflow-x: hidden;
 }
-/* Cabeçalho */
+
 .header {
     padding: 1rem 0 1.5rem 0;
     background-color: #004d99; 
@@ -54,7 +54,6 @@ body {
     font-size: 16px;
     transition: color 0.3s;
 }
-
 .content-button {
     padding: 0.75rem 1.5rem;
     background-color: #ffffff;
@@ -71,63 +70,11 @@ body {
     background-color: #ffcc00;
     box-shadow: 0 0 0 3px #ffe88e
 }
-
-.bottom-content{
-    position: relative;
-    padding-bottom: 3rem;
-}
-/*Formulario*/
-.container {
-    background-color: #ffffff; 
-}
-
-.contato {
-    background-color: #f4f4f4; 
-    padding: 2rem 1rem;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 100px auto 200px;
-    max-width: 800px;
-}
-
-h3 {
-    color: #004d99; 
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    text-align: left;
-    max-width: 600px;
-    margin: 0 auto;
-}
-label {
-    font-size: 1rem;
-    color: #333;
-}
-input,
-textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-    transition: border-color 0.3s;
-}
-input:focus,
-textarea:focus {
-    border-color: #004d99;
-    outline: none;
-}
-
-button {
+.btn,
+ button {
     padding: 0.75rem 1.5rem;
     background-color: #004d99;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     font-size: 1rem;
@@ -135,17 +82,95 @@ button {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
+.btn{
+    color: #004d99;
+}
 
+.btn,
 button:hover {
     background-color: #ffcc00;
     transform: scale(1.05);
 }
 
+.btn,
 button:active {
     transform: scale(1);
 }
 
-/*parte inferior*/
+/*conteudo principal*/
+#auth-section {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.login {
+    margin: 20px;
+    gap: 2rem;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+.register {
+
+    width: 100%;
+
+    margin: 20px;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#login, #register{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    min-width: 300px;
+    box-sizing: border-box;
+} 
+h3{
+    text-align: center;
+    color: #004d99;
+}
+  
+/* Formulário */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+/* Inputs */
+input{
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+  
+/* Botões */
+button {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #004d99;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #ffcc00;
+}
+/*inferior*/
+.bottom-content{
+    position: relative;
+    padding-bottom: 3rem;
+}
 .background {
     position: absolute;
     inset: 0;

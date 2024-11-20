@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 body {
     font-family: Arial, sans-serif;
     padding: 0;
@@ -70,75 +75,105 @@ body {
     background-color: #ffcc00;
     box-shadow: 0 0 0 3px #ffe88e
 }
-
-/*conteudo principal*/
-#auth-section {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    box-sizing: border-box;
-    align-items: center;
+.btn,
+ button {
+    padding: 0.75rem 1.5rem;
+    background-color: #004d99;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn{
+    color: #004d99;
 }
 
-.login {
-    margin: 20px;
-    gap: 2rem;
-    flex-wrap: wrap;
-    height: fit-content;
-}
-.register {
-
-    width: 100%;
-
-    margin: 20px;
-    gap: 2rem;
-    flex-wrap: wrap;
+.btn,
+button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
 }
 
-#login, #register{
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 45%;
-    min-width: 300px;
-    box-sizing: border-box;
-} 
-h3{
+.btn,
+button:active {
+    transform: scale(1);
+}
+/*meio*/
+h2 {
     text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #004d99; 
+
+}
+.quem-somos {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+  
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+  
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+  
+.item.reverse {
+    flex-direction: row-reverse;
+}
+  
+.texto {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+  
+.texto h2 {
+    margin-bottom: 10px;
     color: #004d99;
 }
   
-/* Formulário */
-form{
+.texto p {
+    color: #555;
+}
+  
+.image {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    justify-content: center;
+    margin: 0 0 1.5rem 0;
+    align-items: center;
+    gap: 2rem; 
 }
   
-/* Inputs */
-input{
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-    box-sizing: border-box;
+.img-content img {
+    height: 400px;
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
-  
-/* Botões */
-button {
-    padding: 10px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #004d99;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.imagens{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1.5rem 0;
+    align-items: center;
+    gap: 2rem; 
 }
-button:hover {
-    background-color: #ffcc00;
+.imagens img {
+    height: 700px;
+    width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 /*inferior*/
 .bottom-content{

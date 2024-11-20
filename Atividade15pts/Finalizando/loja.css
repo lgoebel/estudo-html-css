@@ -71,7 +71,32 @@ body {
   background-color: #ffcc00;
   box-shadow: 0 0 0 3px #ffe88e
 }
+.btn-doe,
+ button {
+    padding: 0.75rem 1.5rem;
+    background-color: #004d99;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn-doe{
+    color: #004d99;
+}
 
+.btn-doe,
+button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+}
+
+.btn-doe,
+button:active {
+    transform: scale(1);
+}
 /*meio*/
 .content {
   padding: 20px;
