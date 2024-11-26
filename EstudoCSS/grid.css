@@ -1,0 +1,76 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+.principal {
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 10px; 
+    padding: 20px; 
+}
+
+.divInterna {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(185, 185, 185, 0); 
+    background-color: bisque;
+    transition: transform 0.4s ease, background-color 0.3s ease; 
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.divInterna:hover {
+    color: black; 
+    transform: scale(1.2); 
+    background-color: rgba(255, 170, 65, 0.8); 
+}
+
+#externa {
+    color:black;
+    background-color: rgb(102, 80, 53);
+}
+
+#preta {
+    background-color: rgb(255, 170, 65);
+}
+#preta:hover {
+    background-color: rgb(255, 140, 0); 
+}
+
+#branca {
+    background-color: bisque;
+}
+#branca:hover {
+    background-color: rgb(255, 214, 163); 
+}
+#imagemBranca {
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    max-width: 100%;
+    max-height: 100%;
+}
+  
+#imagemBranca:hover {
+    opacity: 1;
+}
+
+#imagemPreta {
+    background-color:  rgb(255, 140, 0);;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    max-width: 100%;
+    max-height: 100%;
+}
+  
+#imagemPreta:hover {
+    opacity: 1;
+}
