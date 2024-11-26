@@ -26,32 +26,32 @@ body {
 }
 
 #branca,
-#imagemBranca {
-    background-color: #f0d9b5; 
+.imagemBranca {
+    background-color: #f0d9b5;
 }
 
 #preta,
-#imagemPreta {
+.imagemPreta {
     background-color: #b58863; 
 }
 
 #externa {
-    background-color: #ddd;
-     
+    background-color: #ddd; 
 }
 
-#imagemBranca img,
-#imagemPreta img {
+.imagemBranca img,
+.imagemPreta img
+{
     width: 100%;
     height: 100%;
     object-fit: contain;
-    opacity: 0; 
-    transform: scale(0.8);
+    visibility: hidden; 
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-#imagemBranca:hover img,
-#imagemPreta:hover img {
-    opacity: 1; 
+.imagemBranca:hover img,
+.imagemPreta:hover img
+{
+    visibility: visible; 
     transform: scale(1);
 }
