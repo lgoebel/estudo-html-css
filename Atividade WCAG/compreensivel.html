@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compreensível</title>
+  <link rel="icon" href="favicon.jpg">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="text-center container header-container ">
+        <a href="https://www.w3.org/TR/WCAG22/"><img src="ThemeDark.svg" alt="logo" class="header-logo"/></a>
+        <div class="header-text">
+            <h1>WCAG - Os 04 Princípios</h1>
+            <p>Acessibilidade a todos</p>
+        </div>
+    </header>
+    <main class="container d-flex">
+        <aside>
+            <nav>
+                <ul>
+                    <li>
+                        <a  href="perceptivel.html" id="perceptivel">Perceptível</a>
+                    </li>
+                    <li>
+                        <a href="operavel.html">Operável</a>
+                    </li>
+                    <li>
+                        <a class="atual" href="compreensivel.html">Compreensivel</a>
+                        <ul>
+                            <li class="subitem">
+                                <a class="active" href="#legivel">Legível</a>
+                            </li>
+                            <li class="subitem">
+                                <a class="active" href="#previsivel">Previsível</a>
+                            </li>
+                            <li class="subitem">
+                                <a class="active" href="#assistencia">Assistência de entrada</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="robusto.html">Robusto</a>
+                    </li>
+                </ul>
+                <div class="referencia">
+                    <p>Todas as referencias tiradas desse site partiram originalmente do site <strong><a href="https://www.w3.org/TR/WCAG22">W3C - Diretrizes de Acessibilidade de Conteúdo da Web (WCAG) 2.2</a></strong></p>
+                </div>
+            </nav>
+        </aside>
+        <article>
+            <section>
+                <h2>Compreensivel</h2>
+                <p>As informações e a operação da interface do usuário devem ser compreensíveis.</p>
+            </section>
+            <section>
+                <h4>Legível <a class="marcacao" id="legivel" href="#legivel">#</a></h4>
+                <p>Torne o conteúdo do texto legível e compreensível.</p>
+                <p>O idioma humano padrão de cada página da web pode ser determinado programaticamente.</p>
+            </section>
+            <section>
+                <h4>Previsível <a class="marcacao" id="previsivel" href="#previsivel">#</a></h4></h4>
+                <p>Faça com que as páginas da web apareçam e operem de maneiras previsíveis.</p>
+                <p>Quando qualquer componente da interface do usuário recebe foco, ele não inicia uma mudança de contexto .</p>
+            </section>
+            <section>
+                <h4>Assistência de entrada <a class="marcacao" id="assistencia" href="#assistencia">#</a></h4></h4>
+                <p>Ajude os usuários a evitar e corrigir erros.</p>
+                <p>Se um erro de entrada for detectado automaticamente, o item com erro será identificado e o erro será descrito ao usuário em texto.</p>
+            </section>
+        </article>
+    </main>
+    <footer class=" container d-flex">
+
+        <span>&copy;Lucas Assunção</span>
+
+    </footer>
+</body>
+</html>

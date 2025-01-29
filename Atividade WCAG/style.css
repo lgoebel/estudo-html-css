@@ -1,10 +1,29 @@
 body{
     background-color: #f0efe7;
 }
-
 header{
     padding: 40px 0 15px;
 }
+.header-container {
+    display: flex; 
+    align-items: center; 
+    padding: 20px; 
+}
+  
+.header-logo {
+    width: 100px; 
+    height: auto; 
+}
+  
+.header-text {
+    padding-left: 250px;
+    text-align: center; 
+}
+
+.header-text p {
+    margin: 0; 
+}
+
 ul{
     width:220px;
 }
@@ -19,14 +38,7 @@ nav{
     color:#887668;
     font-size: 12px;
 }
-article{
-    border-left-style: solid;
-    margin-left: 70px;
-    padding: 15px 10px 10px 20px;
-    background-color: #fcfcfa;
-    border-radius: 5px;
-    margin: 0 20px 0 20px;
-}
+
 nav ul {
     margin-bottom: 1em;
     margin-left: 0;
@@ -68,6 +80,14 @@ a.active{
     color:gray;
     opacity: .9;
     transition: color 0.3s ease;
+}
+article{
+    border-left-style: solid;
+    margin-left: 70px;
+    padding: 15px 10px 10px 20px;
+    background-color: #fcfcfa;
+    border-radius: 5px;
+    margin: 0 20px 0 20px;
 }
 footer{
     border-top: 1px solid #000;

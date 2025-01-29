@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robusto</title>
+  <link rel="icon" href="favicon.jpg">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="text-center container header-container ">
+        <a href="https://www.w3.org/TR/WCAG22/"><img src="ThemeDark.svg" alt="logo" class="header-logo"/></a>
+        <div class="header-text">
+            <h1>WCAG - Os 04 Princípios</h1>
+            <p>Acessibilidade a todos</p>
+        </div>
+    </header>
+    <main class="container d-flex">
+        <aside>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="perceptivel.html" id="perceptivel">Perceptível</a>
+                    </li>
+                    <li>
+                        <a href="operavel.html">Operável</a>
+                    </li>
+                    <li>
+                        <a href="compreensivel.html">Compreensivel</a>
+                    </li>
+                    <li>
+                        <a class="atual" href="robusto.html">Robusto</a>
+                        <ul>
+                            <li class="subitem">
+                                <a class="active" href="#compativel">Compatível</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="referencia">
+                    <p>Todas as referencias tiradas desse site partiram originalmente do site <strong><a href="https://www.w3.org/TR/WCAG22">W3C - Diretrizes de Acessibilidade de Conteúdo da Web (WCAG) 2.2</a></strong></p>
+                </div>
+            </nav>
+        </aside>
+        <article>
+            <section>
+                <h2>Robusto</h2>
+                <p>O conteúdo deve ser robusto o suficiente para poder ser interpretado por uma ampla variedade de agentes de usuário, incluindo tecnologias assistivas.</p>
+            </section>
+            <section>
+                <h4>Compatível <a class="marcacao" id="compativel" href="#compativel">#</a></h4>
+                <p>Maximize a compatibilidade com agentes de usuários atuais e futuros, incluindo tecnologias assistivas.</p>
+                <p>Para todos os componentes da interface do usuário (incluindo, mas não se limitando a: elementos de formulário, links e componentes gerados por scripts), o nome e a função podem ser determinados programaticamente ; estados , propriedades e valores que podem ser definidos pelo usuário podem ser definidos programaticamente ; e a notificação de alterações nesses itens está disponível para agentes do usuário , incluindo tecnologias assistivas.</p>
+            </section>
+
+        </article>
+    </main>
+    <footer class=" container d-flex">
+
+        <span>&copy;Lucas Assunção</span>
+
+    </footer>
+</body>
+</html>

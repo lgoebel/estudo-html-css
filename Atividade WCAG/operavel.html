@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operável</title>
+  <link rel="icon" href="favicon.jpg">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="text-center container header-container ">
+        <a href="https://www.w3.org/TR/WCAG22/"><img src="ThemeDark.svg" alt="logo" class="header-logo"/></a>
+        <div class="header-text">
+            <h1>WCAG - Os 04 Princípios</h1>
+            <p>Acessibilidade a todos</p>
+        </div>
+    </header>
+    <main class="container d-flex">
+        <aside>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="perceptivel.html" id="perceptivel">Perceptível</a>
+                    </li>
+                    <li>
+                        <a class="atual" href="operavel.html">Operável</a>
+                        <ul>
+                            <li class="subitem">
+                                <a class="active" href="#teclado">Teclado acessível</a>
+                            </li>
+                            <li class="subitem">
+                                <a class="active" href="#tempo">Tempo Suficiente</a>
+                            </li>
+                            <li class="subitem">
+                                <a class="active" href="#convulsoes">Convulsões e reações físicas</a>
+                            </li>
+                            <li class="subitem">
+                                <a class="active" href="#navegavel">Navegável</a>
+                            </li>
+                            <li class="subitem">
+                                <a class="active" href="#modalidades">Modalidades de entrada</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="compreensivel.html">Compreensivel</a>
+                    </li>
+                    <li>
+                        <a href="robusto.html">Robusto</a>
+                    </li>
+                </ul>
+                <div class="referencia">
+                    <p>Todas as referencias tiradas desse site partiram originalmente do site <strong><a href="https://www.w3.org/TR/WCAG22">W3C - Diretrizes de Acessibilidade de Conteúdo da Web (WCAG) 2.2</a></strong></p>
+                </div>
+            </nav>
+        </aside>
+        <article>
+            <section>
+                <h2>Operável</h2>
+                <p>Os componentes de informação e interface do usuário devem ser apresentáveis aos usuários de maneiras que eles possam perceber.<br>Forneça alternativas de texto para qualquer conteúdo não textual, para que ele possa ser alterado para outros formatos que as pessoas precisem, como letras grandes, braille, fala, símbolos ou linguagem mais simples.</p>
+            </section>
+            <section>
+                <h4>Alternativas de texto <a class="marcacao" id="teclado" href="#teclado">#</a></h4>
+                <p>Disponibilize todas as funcionalidades a partir de um teclado.</p>
+                <p>Todas as funcionalidades do conteúdo podem ser operadas por meio de uma interface de teclado, sem exigir tempos específicos para pressionamentos de teclas individuais, exceto quando a função subjacente exige uma entrada que depende do caminho do movimento do usuário e não apenas dos pontos finais.</p>
+            </section>
+            <section>
+                <h4>Tempo Suficiente <a class="marcacao" id="tempo" href="#tempo">#</a></h4></h4>
+                <p>Dê aos usuários tempo suficiente para ler e usar o conteúdo.</p>
+                <p>Para cada limite de tempo definido pelo conteúdo, pelo menos uma das seguintes opções é verdadeira:
+
+                    <br><br><strong>Desligar</strong>:
+                    O usuário tem permissão para desativar o limite de tempo antes de encontrá-lo; ou
+                    
+                    <br><strong>Ajustar</strong>:
+                    O usuário tem permissão para ajustar o limite de tempo antes de encontrá-lo em um amplo intervalo que seja pelo menos dez vezes maior que a duração da configuração padrão; ou
+                    
+                    <br><strong>Estender</strong>:
+                    O usuário é avisado antes que o tempo expire e tem pelo menos 20 segundos para estender o limite de tempo com uma ação simples (por exemplo, "pressione a barra de espaço"), e o usuário tem permissão para estender o limite de tempo pelo menos dez vezes; ou
+                    
+                    <br><strong>Exceção em tempo real</strong>:
+                    O limite de tempo é uma parte necessária de um evento em tempo real (por exemplo, um leilão) e nenhuma alternativa ao limite de tempo é possível; ou
+                    
+                    <br><strong>Exceção Essencial</strong>:
+                    O prazo é essencial e sua extensão invalidaria a atividade; ou
+                    
+                    <br><strong>Exceção de 20 horas</strong>:
+                    O limite de tempo é superior a 20 horas.</p>
+            </section>
+            <section>
+                <h4>Convulsões e reações físicas <a class="marcacao" id="convulsoes" href="#convulsoes">#</a></h4></h4>
+                <p>Não crie conteúdo de uma forma que possa causar convulsões ou reações físicas.</p>
+                <p>As páginas da Web não contêm nada que pisque mais de três vezes em qualquer período de um segundo, ou que o flash esteja abaixo dos limites gerais de flash e flash vermelho .</p>
+            </section>
+            <section>
+                <h4>Navegável <a class="marcacao" id="navegavel" href="#navegavel">#</a></h4></h4>
+                <p>Forneça maneiras de ajudar os usuários a navegar, encontrar conteúdo e determinar onde estão.</p>
+                <p>Existe um mecanismo disponível para ignorar blocos de conteúdo que são repetidos em várias páginas da web .</p>
+            </section>
+            <section>
+                <h4>Modalidades de entrada <a class="marcacao" id="modalidades" href="#modalidades">#</a></h4></h4>
+                <p>Facilite para os usuários operarem a funcionalidade por meio de várias entradas além do teclado.</p>
+                <p>Todas as funcionalidades que usam gestos multiponto ou baseados em caminho para operação podem ser operadas com um único ponteiro sem um gesto baseado em caminho, a menos que um gesto multiponto ou baseado em caminho seja essencial .</p>
+            </section>
+        </article>
+    </main>
+    <footer class=" container d-flex">
+
+        <span>&copy;Lucas Assunção</span>
+
+    </footer>
+</body>
+</html>
