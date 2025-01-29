@@ -2,29 +2,54 @@ body{
     background-color: #f0efe7;
 }
 
+header{
+    padding: 40px 0 15px;
+}
+ul{
+    width:220px;
+}
+nav{
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    opacity: .7;
+}
+.referencia{
+    padding-top: 20px;
+    border-top: 1px solid #000;
+    color:#887668;
+    font-size: 12px;
+}
 article{
     border-left-style: solid;
     margin-left: 70px;
-    padding-left: 10px;
+    padding: 15px 10px 10px 20px;
     background-color: #fcfcfa;
     border-radius: 5px;
     margin: 0 20px 0 20px;
 }
-aside nav ul {
-    margin-bottom: 1.4em;
+nav ul {
+    margin-bottom: 1em;
     margin-left: 0;
     font-size: 16px;
     font-weight: 700;
     list-style: none;
 }
-aside nav ul a{
-    color: black;
-    text-decoration: none;
+.subitem:hover a{
+    color: orangered;
+    transition: color 0.3s ease;
 }
 
-aside nav ul a:hover{
+.atual{
+    color:orangered;
+}
+
+a:hover{
+    color: orangered;
     transition: color 0.3s ease;
-    color: goldenrod;
+}
+ul a{
+    color: black;
+    text-decoration: none;
 }
 
 a.active{
@@ -33,3 +58,21 @@ a.active{
     font-size: 13px;
     font-weight: 400;
 }
+
+.marcacao{
+    color: gray;
+    opacity: .3;
+    text-decoration: none;
+}
+.marcacao:hover{
+    color:gray;
+    opacity: .9;
+    transition: color 0.3s ease;
+}
+footer{
+    border-top: 1px solid #000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    opacity: .7;
+}
+

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Principios WCAG</title>
+  <title>Perceptível</title>
   <link rel="icon" href="favicon.jpg">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,32 +11,39 @@
 </head>
 
 <body>
-    <header class="py-5 text-center">
-        <div class="inner">
-            <h1>WCAG - Os 04 Princípios</h1>
-            <p>Acessibilidade a todos</p>
-        </div>
+    <header class="text-center">
+        <h1>WCAG - Os 04 Princípios</h1>
+        <p>Acessibilidade a todos</p>
     </header>
     <main class="container d-flex">
         <aside>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Perceptível</a>
-                    <ul class="expanded">
-                        <li>
-                            <a class="active" href="#">Alternativas de texto</a>
-                        </li>
-                        <li>
-                            <a class="active" href="#">Mídia baseada em tempo</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">Operável</a></li>
-                <li><a href="#">Compreensivel</a></li>
-                <li><a href="#">Robusto</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="atual" href="#" id="perceptivel">Perceptível</a>
+                        <ul>
+                            <li class="subitem">
+                                <a class="active" href="#alternativas">Alternativas de texto</a>
+                            </li>
+                            <li class="subitem">
+                                <a class="active" href="#midia">Mídia baseada em tempo</a>
+                            </li>
+                            <li class="subitem">
+                                <a class="active" href="#adaptavel">Adaptável</a>
+                            </li>
+                            <li class="subitem">
+                                <a class="active" href="#distinguivel">Distinguível</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Operável</a></li>
+                    <li><a href="#">Compreensivel</a></li>
+                    <li><a href="#">Robusto</a></li>
+                </ul>
+                <div class="referencia">
+                    <p>Todas as referencias tiradas desse site partiram originalmente do site <strong><a href="https://www.w3.org/TR/WCAG22">W3C - Diretrizes de Acessibilidade de Conteúdo da Web (WCAG) 2.2</a></strong></p>
+                </div>
+            </nav>
         </aside>
         <article>
             <section>
@@ -44,26 +51,32 @@
                 <p>Os componentes de informação e interface do usuário devem ser apresentáveis aos usuários de maneiras que eles possam perceber.<br>Forneça alternativas de texto para qualquer conteúdo não textual, para que ele possa ser alterado para outros formatos que as pessoas precisem, como letras grandes, braille, fala, símbolos ou linguagem mais simples.</p>
             </section>
             <section>
-                <h4>Alternativas de texto</h4>
+                <h4>Alternativas de texto <a class="marcacao" id="alternativas" href="#alternativas">#</a></h4>
                 <p>Forneça alternativas de texto para qualquer conteúdo não textual, para que ele possa ser alterado para outros formatos que as pessoas precisem, como letras grandes, braille, fala, símbolos ou linguagem mais simples.</p>
                 <p>Todo conteúdo não textual apresentado ao usuário tem uma alternativa em texto que atende ao propósito equivalente.
                 </p>
             </section>
             <section>
-                <h4>Mídia baseada em tempo</h4>
+                <h4>Mídia baseada em tempo <a class="marcacao" id="midias" href="#midias">#</a></h4></h4>
                 <p>Forneça alternativas para mídia baseada em tempo.</p>
                 <p>Para mídia pré-gravada somente de áudio e mídia pré-gravada somente de vídeo , as seguintes condições são verdadeiras, exceto quando o áudio ou vídeo for uma alternativa de mídia para texto e estiver claramente rotulado como tal.</p>
             </section>
             <section>
-                <h4>Adaptável</h4>
+                <h4>Adaptável <a class="marcacao" id="adaptavel" href="#adaptavel">#</a></h4></h4>
                 <p>Crie conteúdo que possa ser apresentado de diferentes maneiras (por exemplo, layout mais simples) sem perder informações ou estrutura.</p>
                 <p>Informações, estrutura e relacionamentos transmitidos por meio de apresentação podem ser determinados programaticamente ou estão disponíveis em texto.</p>
             </section>
             <section>
-                <h4>Distinguível</h4>
+                <h4>Distinguível <a class="marcacao" id="distinguivel" href="#distinguivel">#</a></h4></h4>
                 <p>Facilite para os usuários verem e ouvirem o conteúdo, incluindo a separação do primeiro plano do fundo.</p>
+                <p>A cor não é usada como o único meio visual de transmitir informações, indicar uma ação, estimular uma resposta ou distinguir um elemento visual.</p>
             </section>
         </article>
     </main>
+    <footer class=" container d-flex">
+
+        <span>&copy;Lucas Assunção</span>
+
+    </footer>
 </body>
 </html>
